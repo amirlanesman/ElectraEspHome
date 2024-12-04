@@ -77,6 +77,8 @@ class ElectraClimate : public climate_ir::ClimateIR {
   static const int32_t ELECTRA_TIME_UNIT = 1000;
   static const int32_t ELECTRA_NUM_BITS  = 34;
   bool supportsOff;
+  /// Set the time of the last transmission.
+  int32_t last_transmit_time_{};
   /// end declartion
 
 
